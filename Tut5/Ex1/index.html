@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./excercise.css" />
+    <style>
+        html {
+            display: inline-block;
+        }
+
+        body {
+            font-family: 'Lora', sans-serif;
+        }
+
+        header {
+            position: relative;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('header.jpg');
+            background-repeat: no-repeat;
+            height: 600px;
+            background-size: cover;
+            object-fit: cover;
+            background-position: center;
+
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: auto;
+            color: white;
+
+        }
+
+        nav {
+            padding: 20px;
+            position: relative;
+            margin: 15px;
+            font-size: 40px;
+            color: white;
+
+        }
+
+        .section {
+            margin-top: -70px;
+            padding-left: 50%;
+
+        }
+
+        .section p {
+            display: inline;
+            padding-left: 40px;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 180px;
+        }
+
+        .title p {
+            font-size: 20px;
+            margin-bottom: -5px;
+        }
+
+        .title h1 {
+            font-size: 60px;
+            margin-top: 2px;
+            margin-bottom: -1px;
+            letter-spacing: 8px;
+        }
+
+        .learnmore {
+            margin-top: 1.5px;
+            height: 45px;
+            width: 180px;
+            color: white;
+            font-size: 20px;
+            font-weight: 100;
+            border-radius: 100px;
+            border: none;
+            background: rgb(54, 179, 168);
+            font-family: "Lora", sans-serif;
+        }
+
+        .click2:hover .learnmore {
+            opacity: 0.3;
+        }
+
+        .action {
+            width: 120px;
+            height: 30px;
+            color: white;
+            border-radius: 100px;
+            background-color: transparent;
+            border-color: white;
+            margin-left: 35px;
+            font-family: "Lora", sans-serif;
+        }
+
+        .section .click1 {
+            display: inline;
+        }
+
+        .click1:hover .action {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                CS 193x
+            </nav>
+            <div class="section">
+                <p>HOME</p>
+                <p>ABOUT</p>
+                <p>NEWS</p>
+                <p>READ ME</p>
+                <div class="click1">
+                    <button class="action">TAKE ACTIONS</button>
+                </div>
+            </div>
+            <!-- Title -->
+            <div class="title">
+                <p><em>Sustainability</em></p>
+                <h1>STARTS WITH YOU</h1>
+                <div class="click2">
+                    <button class="learnmore">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
