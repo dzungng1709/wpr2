@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: lightskyblue;
+            display: flex;
+        }
+
+        .container {
+            color: gray;
+            margin: auto;
+            margin-left: 25%;
+            width: 700px;
+            border: 1px solid white;
+            padding: 50px;
+            padding-left: 32%;
+            border-collapse: collapse;
+            background: #FDFFF0;
+            font-family: Verdana, sans-serif;
+        }
+
+        h1 {
+            padding-left: 70%;
+        }
+
+        .intro {
+            padding-left: 45px;
+        }
+
+        label[for="name"],
+        [for="email"] {
+            padding-left: 70px;
+            margin-top: -20px;
+        }
+
+        label[for="age"] {
+            padding-left: 85px;
+        }
+
+        .opinion {
+            margin-left: -110px;
+        }
+
+        .maybe,
+        .notsure {
+            padding-left: 222px;
+        }
+
+        .def {
+            padding-left: -100px;
+        }
+
+        input[type="text"],
+        [type="number"] {
+            width: 280px;
+            height: 35px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Survey Form</h1>
+    <div class="container">
+        <table id="login-table">
+            <form action="login" method="POST">
+                <tr>
+                    <td><span class="intro">Let us know how we can improve freeCodeCamp</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name">*Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">*Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Enter your Email" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="age">*Age:</label>
+                        <input type="number" id="age" name="age" placeholder="Age" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="role">Which option best describes your current role:</label>
+                        <select class="role">
+                            <option value="Student">Student</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="opinion">
+                            How likely is that you would recommend<br>freeCodeCamp to a
+                            friend? <input type="radio" id="opinion" name="opinion" value="Definitely" required />
+                            <label for="def">Definitely</label>
+                        </span>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <span class="maybe">
+                            <input type="radio" id="opinion" name="opinion" value="maybe" required />
+                            <label for="maybe">Maybe</label>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <span class="notsure">
+                            <input type="radio" id="opinion" name="opinion" value="notsure" required />
+                            <label for="notsure">Not sure</label>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="option">What do you like most in FCC:</label>
+                        <select class="option">
+                            <option value="option">Select an option</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="check">Thing should be improved in the future<br>(Check all that apply)</label>
+                        <input type="radio" id="check" name="check" value="front-end" required />
+                        <label for="check">Front-end Projects</label>
+                        <br>
+                        <input type="radio" id="check" name="check" value="back-end" required />
+                        <label for="check">Back-end Projects</label>
+                        <br>
+                        <input type="radio" id="check" name="check" value="data" required />
+                        <label for="check">Data Visualization</label>
+                        <br>
+                        <input type="radio" id="check" name="check" value="open" required />
+                        <label for="check">Open Source Community</label>
+                        <br>
+                        <input type="radio" id="check" name="check" value="gitter" required />
+                        <label for="check">Gitter help roams</label>
+                        <br>
+                        <input type="radio" id="check" name="check" value="viedo" required />
+                        <label for="check">Videos</label>
+                        <br>
+                        <input type="radio" id="check" name="check" value="city" required />
+                        <label for="check">City meetups</label>
+                        <br>
+                        <input type="radio" id="check" name="check" value="wiki" required />
+                        <label for="check">Wiki</label>
+                        <br>
+                        <input type="radio" id="check" name="check" value="forum" required />
+                        <label for="check">Forum</label>
+                        <br>
+                        <input type="radio" id="check" name="check" value="course" required />
+                        <label for="check">Additional Courses</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name">Any comments or Suggestion?</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your commetn here..." required />
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>
+
+</html>
