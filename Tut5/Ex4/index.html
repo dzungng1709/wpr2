@@ -62,6 +62,12 @@
             height: 35px;
             margin-top: 10px;
         }
+        nav{
+            padding-left: 180px;
+        }
+        input[type="submit"]{
+            margin-left: 180px;
+        }
     </style>
 </head>
 
@@ -137,7 +143,7 @@
                         <label for="check">Thing should be improved in the future<br>(Check all that apply)</label>
                         <input type="radio" id="check" name="check" value="front-end" required />
                         <label for="check">Front-end Projects</label>
-                        <br>
+                        <nav>
                         <input type="radio" id="check" name="check" value="back-end" required />
                         <label for="check">Back-end Projects</label>
                         <br>
@@ -164,12 +170,19 @@
                         <br>
                         <input type="radio" id="check" name="check" value="course" required />
                         <label for="check">Additional Courses</label>
+                        </nav>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="name">Any comments or Suggestion?</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your commetn here..." required />
+                        
+                            <label for="w3review">Review of W3Schools:</label>
+                            <textarea id="w3review" name="w3review" rows="4" cols="50">
+                             
+                              </textarea>
+                              <br><br>
+                              <input type="submit" value="Submit">
+                        
                     </td>
                 </tr>
             </form>
