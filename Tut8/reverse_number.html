@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input[value="OK"] {
+            background-color: lightskyblue;
+            height: 30px;
+            width: 80px;
+            border-radius: 5px;
+            cursor: pointer;
+            border-color: lightskyblue;
+            margin-left: 120px;
+        }
+
+        button {
+            margin-left: 20px;
+            background-color: lightskyblue;
+            height: 30px;
+            width: 80px;
+            border-radius: 5px;
+            cursor: pointer;
+            border-color: lightskyblue;
+        }
+
+        input[type="number"] {
+            width: 300px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Please input an integer!</p>
+
+    <input type="number" id="input_number" placeholder="Type here">
+    <br><br>
+    <input type="button" value="OK" id="input_button">
+    <button onclick="document.getElementById('input_number').value = ''">Cancel</button>
+
+    <script>
+        function findReverse() {
+            let number = Number(document.getElementById("input_number").value);
+
+            let reverse = Number(String(number).split('').reverse().join(''));
+
+            alert("Reverse: " + reverse);
+
+        }
+        let button = document.getElementById("input_button");
+        button.onclick = findReverse;
+
+    </script>
+
+</body>
+
+</html>
