@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         html {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input[value="Check"] {
+           
+            height: 30px;
+            width: 80px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        input[type="number"] {
+            width: 300px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Input a number!</h2>
+    <input type="number" id="input_number" placeholder="Type here">
+    <input type="button" value="Check" id="input_button">
+    <script>
+        function isEven() {
+            let number = Number(document.getElementById("input_number").value);
+
+            if (number % 2 == 0)
+                alert(number + " is an even number.")
+            
+            else
+                alert(number + " is an odd number.")
+        }
+            let button = document.getElementById("input_button");
+            button.onclick = isEven;
+    </script>
+</body>
+</html>
