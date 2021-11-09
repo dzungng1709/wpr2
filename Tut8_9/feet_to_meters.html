@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <label>Feet</label>
+        <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+      </p>
+      <p>Meters: <span id="outputMeters"></span></p>
+      
+      <script>
+      function LengthConverter(valNum) {
+        document.getElementById("outputMeters").innerHTML=valNum/3.2808;
+      }
+  </script>
+</body>
+</html>
