@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather in App</title>
+    <link rel="stylesheet" href="assets/bootstrap-502/dist/css/bootstrap.min.css">
+    <script src="assets/bootstrap-502/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container my-5">
+        <h1 class="text-center title">Weather in</h1>
+        <form class="search-loaction">
+            <input type="text" name="city" placeholder="What city?" autocomplete="off" class="form-control text-muted form-rounded p-4 shadow-sm" />
+        </form>
+
+        <div class="card rounded my-3 shadow-lg d-none back-card">
+            <div class="card-top text-center">
+                <div class="city-name my-3">
+                    <p>Hanoi</p>
+                    <span>...</span>
+                </div>
+                <img src="img/night_image.svg" alt="" class="card-img-top time" />
+            </div>
+
+            <div class="card-body">
+                <div class="card-mid row">
+                    <div class="col-8 text-center temp">
+                        <span>30&deg;C</span>
+                    </div>
+                    <div class="col-4 condition-temp">
+                        <p class="condition">Thunder Storm</p>
+                        <p class="high">30&deg;C</p>
+                        <p class="low">27&deg;C</p>
+                    </div>
+                </div>
+
+                <div class="icon-container card shadow mx-auto">
+                    <img src="img/cloud.svg" alt="" />
+                </div>
+                <div class="card-bottom px-5 py-4 row">
+                    <div class="info">
+                        <div class="col text-center">
+                            <p>30&deg;C</p>
+                            <span>Feels Like</span>
+                        </div>
+                        <div class="col text-center">
+                            <p>55%</p>
+                            <span>Humidity</span>
+                        </div>
+                        <div class="col text-center">
+                            <p>0.26 m/s</p>
+                            <span>Wind speeds</span>
+                        </div>
+                        <div class="col text-center">
+                            <p>10%</p>
+                            <span>Clouds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forecast">
+                    <div class="date">
+                        Wednesday, 23 March 2022
+                    </div>
+                    <div class="icon-daily">
+                        <img src="img/cloud.svg" alt="" />
+                    </div>
+                    <div class="temp1">
+                        <p class="high">30&deg;C</p>
+                        <p class="low">27&deg;C</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="request.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

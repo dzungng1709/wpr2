@@ -1,0 +1,134 @@
+html,
+body {
+    background-color: lemonchiffon;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #22577A;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {}
+
+.title {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.form-rounded {
+    border-radius: 2em;
+}
+
+.back-card {
+    border-radius: 40px !important;
+    border-color: #94b49f;
+    background-color: #b4cfb0;
+}
+
+.list-group-item {
+    color: #22577A;
+    background-color: #b4cfb0;
+}
+
+.city-name {
+    position: absolute;
+    width: 100%;
+}
+
+.city-name p {
+    font-size: 36pt;
+    font-weight: 600;
+}
+
+.city-name span {
+    font-weight: 400;
+    font-size: 36pt;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: -60px;
+}
+
+.temp span {
+    font-weight: 300;
+    font-size: 6em;
+    letter-spacing: -5px;
+    white-space: nowrap;
+}
+
+.card-mid {
+    line-height: 1;
+    margin-right: 2rem;
+}
+
+.condition {
+    line-height: 1em;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+.high,
+.low {
+    font-weight: 500;
+}
+
+.high::before {
+    content: '';
+    background: url('img/up.svg') no-repeat;
+    width: 10px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+.low::before {
+    content: '';
+    background: url('img/down.svg') no-repeat;
+    width: 10px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+.icon-container {
+    border-radius: 100%;
+    width: 130px;
+    height: 130px;
+    background: #789395;
+}
+
+.icon-container:hover {}
+
+.icon-container img {
+    margin: auto;
+}
+
+.card-bottom {
+    margin-top: 1.5rem;
+    line-height: 0.5;
+}
+
+.card-bottom span {
+    font-size: 14px;
+}
+
+.card-bottom p {
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: -2px;
+    margin-bottom: 0.5em;
+}
+
+.forecast {
+    font-size: 1.5em;
+    background-color: #94b49f;
+    height: 290px;
+    border-radius: 2em;
+    padding-left: 600px;
+    padding-top: 50px;
+}
